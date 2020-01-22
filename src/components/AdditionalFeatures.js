@@ -1,5 +1,6 @@
 import React from 'react';
 import AdditionalFeature from './AdditionalFeature';
+import '../styles.css';
 
 const AdditionalFeatures = props => {
   return (
