@@ -3,7 +3,8 @@ import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
-import './styles.css';
+
+import {connect} from 'react-redux';
 
 const App = () => {
   const state = {
@@ -45,4 +46,14 @@ const App = () => {
   );
 };
 
-export default App;
+const mapStateToProps = state => {
+  console.log(state);
+  return {
+    
+  }
+}
+
+export default connect(
+  mapStateToProps,
+  {}
+)(App);
